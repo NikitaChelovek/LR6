@@ -177,4 +177,7 @@ git status
 git add *
 git commit -m "Третья версия отчёта"
 
+git push --set-upstream origin otchet
+
+
 ```

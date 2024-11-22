@@ -75,6 +75,7 @@
 ![Рисунок 8](img/9.jpg)
 
 **Рисунок 8** — Решение конфликта при merge
+
 ---
 
 ### 9. Решение конфликта при merge
@@ -82,6 +83,7 @@
 ![Рисунок 9](img/10.jpg)
 
 **Рисунок 9** — Результат успешного решения конфликта
+
 ---
 
 ### 10. Удалена побочная ветка локально
@@ -89,6 +91,7 @@
 ![Рисунок 10](img/11.jpg)
 
 **Рисунок 10** — Локальное удаление побочной ветки
+
 ---
 
 ### 11. Удалена побочная ветка глобально
@@ -165,7 +168,7 @@ git reset HEAD~1
 
 git status
 git checkout -b otchet
-git log --pretty
+git log --pretty=format:"%h | %ad | %an | %s" --date=short
 
 git status
 git add *
@@ -179,5 +182,8 @@ git commit -m "Третья версия отчёта"
 
 git push --set-upstream origin otchet
 
+git add *
+git commit -m "Четвертая версия отчёта"
+git push --set-upstream origin otchet
 
 ```
